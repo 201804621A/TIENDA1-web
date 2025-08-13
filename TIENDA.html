@@ -1,0 +1,215 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍 Tienda de Ropa</h1>
+    <nav>
+        <button class="btn-nav" onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button class="btn-nav" onclick="mostrarSeccion('catalogo')">Catálogo</button>
+        <button class="btn-nav" onclick="mostrarSeccion('carrito')">Carrito</button>
+        <button class="btn-nav" onclick="mostrarSeccion('contacto')">Contacto</button>
+    </nav>
+</header>
+
+<!-- INICIO -->
+<section id="inicio" class="seccion activa">
+    <h2>Bienvenido a Nuestra Tienda</h2>
+    <p>Encuentra la mejor ropa para hombres, mujeres y niños, con increíbles descuentos y la mejor calidad garantizada.</p>
+    <div class="banner">
+        <img src="imagenes/banner.jpg" alt="Banner Tienda" style="width:100%; max-height:300px; object-fit:cover;">
+    </div>
+</section>
+
+<!-- Catálogo -->
+<section id="catalogo" class="seccion">
+    <h2>Catálogo</h2>
+    <div class="subcategorias">
+        <button class="btn-sub" onclick="mostrarSeccion('hombre')">Hombre</button>
+        <button class="btn-sub" onclick="mostrarSeccion('mujer')">Mujer</button>
+        <button class="btn-sub" onclick="mostrarSeccion('nino')">Niño</button>
+        <button class="btn-sub" onclick="mostrarSeccion('descuentos')">Descuentos</button>
+    </div>
+</section>
+
+<!-- Sección Hombre -->
+<section id="hombre" class="seccion">
+    <h2>Ropa de Hombre</h2>
+
+    <h3>Pantalones</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Pantalón Jeans</h4>
+            <p>Precio: $40</p>
+            <button class="btn-add" onclick="agregarCarrito('Pantalón Jeans', 40)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h4>Pantalón Cargo</h4>
+            <p>Precio: $45</p>
+            <button class="btn-add" onclick="agregarCarrito('Pantalón Cargo', 45)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Polos</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Polo Básico</h4>
+            <p>Precio: $15</p>
+            <button class="btn-add" onclick="agregarCarrito('Polo Básico', 15)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <h4>Polo Deportivo</h4>
+            <p>Precio: $20</p>
+            <button class="btn-add" onclick="agregarCarrito('Polo Deportivo', 20)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Casacas</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Casaca de Cuero</h4>
+            <p>Precio: $60</p>
+            <button class="btn-add" onclick="agregarCarrito('Casaca de Cuero', 60)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Zapatillas</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Zapatillas Urbanas</h4>
+            <p>Precio: $50</p>
+            <button class="btn-add" onclick="agregarCarrito('Zapatillas Urbanas', 50)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Mujer -->
+<section id="mujer" class="seccion">
+    <h2>Ropa de Mujer</h2>
+
+    <h3>Pantalones</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Pantalón Skinny</h4>
+            <p>Precio: $35</p>
+            <button class="btn-add" onclick="agregarCarrito('Pantalón Skinny', 35)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Polos</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Polo Elegante</h4>
+            <p>Precio: $22</p>
+            <button class="btn-add" onclick="agregarCarrito('Polo Elegante', 22)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Casacas</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Casaca de Lana</h4>
+            <p>Precio: $55</p>
+            <button class="btn-add" onclick="agregarCarrito('Casaca de Lana', 55)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Zapatillas</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Zapatillas Blancas</h4>
+            <p>Precio: $48</p>
+            <button class="btn-add" onclick="agregarCarrito('Zapatillas Blancas', 48)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Niño -->
+<section id="nino" class="seccion">
+    <h2>Ropa de Niño</h2>
+
+    <h3>Pantalones</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Pantalón Niño</h4>
+            <p>Precio: $20</p>
+            <button class="btn-add" onclick="agregarCarrito('Pantalón Niño', 20)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Polos</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Polo Niño</h4>
+            <p>Precio: $12</p>
+            <button class="btn-add" onclick="agregarCarrito('Polo Niño', 12)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Casacas</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Casaca Niño</h4>
+            <p>Precio: $30</p>
+            <button class="btn-add" onclick="agregarCarrito('Casaca Niño', 30)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Zapatillas</h3>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Zapatillas Niño</h4>
+            <p>Precio: $25</p>
+            <button class="btn-add" onclick="agregarCarrito('Zapatillas Niño', 25)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Descuentos -->
+<section id="descuentos" class="seccion">
+    <h2>Ofertas Especiales</h2>
+    <div class="lista-productos">
+        <div class="producto">
+            <h4>Chaqueta Deportiva</h4>
+            <p>Precio: $30</p>
+            <button class="btn-add" onclick="agregarCarrito('Chaqueta Deportiva', 30)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- Carrito -->
+<section id="carrito" class="seccion">
+    <h2>Carrito de Compras</h2>
+    <table id="tabla-carrito">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <h3 id="total-compra">Total: $0</h3>
+    <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>¡Conéctate con nosotros a través de nuestras redes sociales!</p>
+    <div class="redes">
+        <a href="https://www.facebook.com" target="_blank">📘 Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">📸 Instagram</a>
+        <a href="https://wa.me/1234567890" target="_blank">💬 WhatsApp</a>
+    </div>
+</section>
+
+<script src="tienda.js"></script>
+</body>
+</html>

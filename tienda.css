@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.btn-nav, .btn-sub, .btn-add, .btn-finalizar {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn-nav:hover, .btn-sub:hover, .btn-add:hover, .btn-finalizar:hover {
+    background-color: #e65c00;
+}
+
+.seccion {
+    display: none;
+    padding: 20px;
+}
+
+.seccion.activa {
+    display: block;
+}
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.redes a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    background: #555;
+}
